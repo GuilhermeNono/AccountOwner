@@ -1,0 +1,21 @@
+/* Acessar a pasta do backend */
+cd backend
+
+/* Criar uma solução dentro da pasta do backend */
+dotnet new sln --name AccountOwnerServer
+
+/* Criar o projeto API dentro da pasta do backend */
+dotnet new webapi --name AccountOwnerServer -f net6.0 -lang "C#"
+/* Adicionar o projeto na solução */ 
+dotnet sln add AccountOwnerServer\AccountOwnerServer.csproj
+
+git add .
+git commit -m "Criada a estrutura de pastas, criado a solução backend e o projeto webapi"
+git status
+git push
+
+/* Executar o projeto direto do backend */
+dotnet watch run AccountOwnerServer\AccountOwnerServer.csproj
+
+/* Executar o projeto direto da pasta do projeto */
+dotnet watch run
