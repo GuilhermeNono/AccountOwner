@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./internal-server.component.css']
 })
 export class InternalServerComponent {
+  errorMessage: string = "500 SERVER ERROR, CONTACT ADMINISTRATOR!!!!";
+  
+  constructor(){}
 
+  ngOnInit():void{
+
+  }
 }
